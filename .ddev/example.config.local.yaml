@@ -4,7 +4,7 @@ hooks:
     # Install
     - exec: drush site:install minimal -y
     # Recipes
-    - exec: drush recipe ../recipes/velir_base
+    - exec: drush recipe ../recipes/contrib/kingly
     # Finalize
     - exec: drush cron
     - exec: drush cache:rebuild

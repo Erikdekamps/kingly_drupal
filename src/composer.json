@@ -12,19 +12,24 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/erikdekamps/kingly"
         }
     ],
     "require": {
         "composer/installers": "^2.0",
+        "droptica/ddr_security_seckit": "^1.0",
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-recommended": "^10.4",
-        "drupal/velir_base": "^1.0",
-        "drush/drush": "^13.3"
+        "drush/drush": "^13.3",
+        "erikdekamps/kingly": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -42,6 +47,9 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": [
+            "drupal-recipe"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -69,6 +77,12 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
+            ],
+            "recipes/contrib/{$name}": [
+                "type:drupal-recipe"
+            ],
+            "recipes/custom/{$name}": [
+                "type:drupal-custom-recipe"
             ]
         }
     }
