@@ -1,3 +1,7 @@
+# Kingly Drupal
+
+Another Drupal 10 project that uses the Kingly recipe for a starter site.
+
 # Getting started
 
 ## Copy local ddev config:
