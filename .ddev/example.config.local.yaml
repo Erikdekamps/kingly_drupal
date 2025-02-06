@@ -1,0 +1,12 @@
+hooks:
+  post-start:
+    - composer: install
+    # Install
+    - exec: drush site:install -y
+    # Recipes
+    - exec: drush recipe ../recipes/velir_base
+    # Finalize
+    - exec: drush cron
+    - exec: drush cache:rebuild
+    # Launch
+    - exec-host: ddev launch $(ddev drush uli)
