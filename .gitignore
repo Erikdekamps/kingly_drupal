@@ -69,4 +69,5 @@
 /src/composer.lock
 /src/.editorconfig
 /src/.gitattributes
-/src/config/sync/
+/src/config/sync
+/src/web/libraries
