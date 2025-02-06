@@ -2,7 +2,7 @@ hooks:
   post-start:
     - composer: install
     # Install
-    - exec: drush site:install -y
+    - exec: drush site:install minimal -y
     # Recipes
     - exec: drush recipe ../recipes/velir_base
     # Finalize
