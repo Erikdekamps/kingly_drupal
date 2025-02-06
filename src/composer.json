@@ -16,6 +16,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/erikdekamps/kingly"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/erikdekamps/kingly_page"
         }
     ],
     "require": {
@@ -24,7 +28,8 @@
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-recommended": "^10.4",
         "drush/drush": "^13.3",
-        "erikdekamps/kingly": "dev-main"
+        "erikdekamps/kingly": "dev-main",
+        "erikdekamps/kingly_page": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*"
