@@ -6,6 +6,7 @@ hooks:
     # Recipes
     - exec: drush recipe ../recipes/contrib/kingly
     - exec: drush recipe ../recipes/contrib/kingly_page
+    - exec: drush recipe ../recipes/contrib/kingly_frontend
     # Finalize
     - exec: drush cron
     - exec: drush cache:rebuild
