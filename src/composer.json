@@ -12,18 +12,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/erikdekamps/kingly"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/erikdekamps/kingly_page"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/erikdekamps/kingly_frontend"
         }
     ],
     "require": {
@@ -34,6 +22,7 @@
         "drush/drush": "^13.3",
         "erikdekamps/kingly": "dev-main",
         "erikdekamps/kingly_page": "dev-main",
+        "erikdekamps/kingly_paragraph_text": "dev-main",
         "erikdekamps/kingly_frontend": "dev-main"
     },
     "conflict": {
