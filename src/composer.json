@@ -16,14 +16,10 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "droptica/ddr_security_seckit": "^1.0",
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-recommended": "^10.4",
         "drush/drush": "^13.3",
-        "erikdekamps/kingly": "dev-main",
-        "erikdekamps/kingly_page": "dev-main",
-        "erikdekamps/kingly_paragraph_text": "dev-main",
-        "erikdekamps/kingly_frontend": "dev-main"
+        "erikdekamps/kingly": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*"
