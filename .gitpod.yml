@@ -3,11 +3,10 @@ image: drupalpod/drupalpod-gitpod-base:20240905
 tasks:
   - init: |
       cp .ddev/example.config.local.yaml .ddev/config.local.yaml
-      ddev start -y
+#      ddev start -y
     command: |
       ddev start -y
       gp ports await 8080 && gp preview $(gp url 8080)
-
 
 ports:
   # Used by ddev - local db clients
