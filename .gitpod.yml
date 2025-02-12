@@ -1,0 +1,38 @@
+image: drupalpod/drupalpod-gitpod-base:20240905
+
+tasks:
+  - name: Kingly Drupal
+    before:
+      export DDEV_NO_INSTRUMENTATION="true"
+      cp .ddev/example.config.local.yaml .ddev/config.local.yaml
+    init: ddev start
+    command: ddev drush uli
+
+ports:
+  # Used by ddev - local db clients
+  - port: 3306
+    onOpen: ignore
+  # Used by Storybook
+  - port: 6006
+    onOpen: ignore
+  # Used by projector
+  - port: 6942
+    onOpen: ignore
+  # Used by MailHog
+  - port: 8027
+    onOpen: ignore
+  # Used by phpMyAdmin
+  - port: 8036
+    onOpen: ignore
+  # Direct-connect ddev-webserver port that is the main port
+  - port: 8080
+    onOpen: ignore
+  # Ignore host https port
+  - port: 8443
+    onOpen: ignore
+  # xdebug port
+  - port: 9003
+    onOpen: ignore
+  # projector port
+  - port: 9999
+    onOpen: open-browser
