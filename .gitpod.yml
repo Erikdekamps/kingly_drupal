@@ -1,12 +1,13 @@
 image: drupalpod/drupalpod-gitpod-base:20240905
 
 tasks:
-  - name: Kingly Drupal
-    before:
-      export DDEV_NO_INSTRUMENTATION="true"
+  - init: |
       cp .ddev/example.config.local.yaml .ddev/config.local.yaml
-    init: ddev start
-    command: ddev drush uli
+      ddev start -y
+    command: |
+      ddev start -y
+      gp ports await 8080 && gp preview $(gp url 8080)
+
 
 ports:
   # Used by ddev - local db clients
