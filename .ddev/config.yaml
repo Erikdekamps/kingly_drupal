@@ -15,4 +15,4 @@ composer_version: "2"
 web_environment:
     - COMPOSER_NO_AUDIT=1
 corepack_enable: false
-ddev_version_constraint: '>= 1.24.0'
+#ddev_version_constraint: '>= 1.24.0'
