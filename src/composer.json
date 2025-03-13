@@ -21,6 +21,10 @@
         "drush/drush": "^13.3",
         "erikdekamps/kingly": "dev-main"
     },
+    "require-dev": {
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": "^5.3"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },
