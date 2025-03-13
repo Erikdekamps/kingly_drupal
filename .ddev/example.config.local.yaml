@@ -5,10 +5,6 @@ hooks:
     - exec: drush site:install minimal -y
     # Recipes
     - exec: drush recipe ../recipes/contrib/kingly
-    - exec: drush recipe ../recipes/contrib/kingly_page
-    - exec: drush recipe ../recipes/contrib/kingly_paragraph_text
-    - exec: drush recipe ../recipes/contrib/kingly_paragraph_card
-    - exec: drush recipe ../recipes/contrib/kingly_frontend
     # Finalize
     - exec: drush cron
     - exec: drush cache:rebuild
