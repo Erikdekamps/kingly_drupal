@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-        "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^10.4",
-        "drupal/core-recommended": "^10.4",
+        "composer/installers": "^2.3",
+        "drupal/core-composer-scaffold": "^11.1",
+        "drupal/core-recommended": "^11.1",
         "drush/drush": "^13.3",
         "erikdekamps/kingly": "dev-main"
     },
