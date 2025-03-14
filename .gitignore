@@ -65,7 +65,7 @@
 /drupal
 
 # Temporary igores
-/src/recipes/contrib
+/src/recipes
 /src/composer.lock
 /src/.editorconfig
 /src/.gitattributes
