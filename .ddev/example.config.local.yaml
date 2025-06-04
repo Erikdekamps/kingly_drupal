@@ -1,6 +1,7 @@
 hooks:
   post-start:
     - composer: install
+    - composer: update
     # Install
     - exec: drush site:install minimal -y
     # Recipes
@@ -14,6 +15,7 @@ hooks:
     - exec: drush en devel_generate -y
     - exec: drush pathauto:aliases-generate create canonical_entities:node
     # Finalize
+    - exec: drush config:set system.site name 'Kingly' -y
     - exec: drush cron
     - exec: drush cache:rebuild
     # Launch
