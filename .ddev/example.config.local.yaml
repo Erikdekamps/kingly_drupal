@@ -7,6 +7,8 @@ hooks:
     # Recipes
     - exec: drush recipe ../recipes/contrib/kingly
     - exec: drush pm:uninstall navigation -y
+    # Install npm dependencies
+    - exec: cd src/web/themes/contrib/kingly_minimal && npm i && npm run build
     # Development
     - exec: drush php:eval "\Drupal::keyValue('development_settings')->setMultiple(['disable_rendered_output_cache_bins' => TRUE, 'twig_debug' => TRUE, 'twig_cache_disable' => TRUE]);"
     - exec: drush en default_content -y

@@ -6,5 +6,5 @@
 
 # https://git.drupalcode.org/project/drupal_cms/-/blob/1.x/.ddev/commands/host/rebuild
 ddev drush sql:drop -y
-rm -r -f src/vendor src/composer.lock $DDEV_DOCROOT
+rm -r -f src/vendor src/recipes src/composer.lock
 ddev restart
